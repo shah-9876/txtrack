@@ -10,8 +10,8 @@
     }
   },
   "permissions": ["storage", "activeTab"],
-  "host_permissions": ["http://localhost:3000/"],
+  "host_permissions": ["https://txtrack-server.vercel.app/"],
   "icons": {
-    "16": "./assests/images.png"
+    "16": "./assests/logo.png"
   }
 }
