@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Bitcoin Block Explorer",
+  "version": "1.0",
+  "description": "A simple Bitcoin Block Explorer extension with functionality to view block details, transaction details, and address details.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./assests/images.png"
+    }
+  },
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["http://localhost:3000/"],
+  "icons": {
+    "16": "./assests/images.png"
+  }
+}

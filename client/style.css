@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Nanum+Gothic+Coding&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Kode Mono", monospace;
+  margin: 10px;
+  background-color: #020202;
+  color: #f4f4f4;
+  width: 330px;
+  height: 550px;
+  overflow: hidden;
+  margin: yellow solid 1px;
+}
+h1,
+h2 {
+  color: #3498db;
+}
+
+#home > video {
+  height: 250px;
+  margin-left: 12%;
+  margin-top: -13%;
+}
+/* CSS */
+.button-58 {
+  align-items: center;
+  background-color: rgb(187, 159, 21);
+  border: 2px solid rgb(187, 159, 21);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  border-radius: 5px;
+  fill: #000;
+  font-family: "Kode Mono", monospace;
+  font-weight: 700;
+  font-size: 12px;
+
+  height: 40px;
+  justify-content: center;
+  letter-spacing: 2px;
+
+  width: 260px;
+  outline: 0;
+  padding: 0 40px;
+  margin-left: 11%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-58:focus {
+  color: #171e29;
+}
+
+.button-58:hover {
+  background-color: rgb(239, 209, 60);
+  border-color: rgb(187, 159, 21);
+  fill: #06f;
+}
+
+.button-58:active {
+  background-color: rgb(239, 209, 60);
+  border-color: rgb(187, 159, 21);
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}
+
+#home > img {
+  width: 250px;
+  margin-left: 12%;
+}
+
+.page {
+  display: none;
+}
+
+.block {
+  margin: 10px;
+}
+
+.block {
+  border-radius: 8px;
+}
+
+.block > #part {
+  display: flex;
+}
+
+.block > #part > #backToHomeBlock,
+#backToHomeTransaction,
+#backToHomeAddress {
+  height: 31px;
+  margin-top: 3%;
+  margin-left: 42%;
+}
+
+.block > #part > #backToHomeBlock,
+#backToHomeTransaction,
+#backToHomeAddress:hover {
+  cursor: pointer;
+}
+
+.block h2 {
+  color: rgb(187, 159, 21);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.block input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.block button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(187, 159, 21);
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.block button:hover {
+  background-color: rgb(207, 180, 45);
+}
+
+.block > .loader {
+  display: none;
+  margin: 20px auto;
+  border-top: 4px solid rgb(239, 209, 60);;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.block .result1 {
+  word-wrap: break-word;
+  margin-top: 3px;
+  overflow-x: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  display: block;
+}
+
+.result1 p {
+  padding: 5px;
+  background-color: #3e3e3e;
+  border-radius: 4px;
+}
