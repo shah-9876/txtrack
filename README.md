@@ -1,7 +1,7 @@
 # Bitcoin Block Explorer Extension
 
 ## Description
-This is a simple Bitcoin Block Explorer extension that allows users to view block details, transaction details, and address details directly from their browser toolbar.
+This is a simple Bitcoin (Mainnet) Block Explorer extension that allows users to view block details, transaction details, and address details directly from their browser toolbar.
 
 ## Features
 - View Block Details
