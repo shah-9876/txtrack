@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>txTrack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home" class="page active">
+      <img src="assests/logo.png" alt="txTrack" />
+      <video
+        id="myVid"
+        src="assests/vid.mp4"
+        autoplay
+        loop
+        muted
+        preload="auto"
+      ></video>
+
+      <br /><br />
+      <button class="button-58" data-nav="block">Block Details</button
+      ><br /><br />
+      <button class="button-58" data-nav="transaction">
+        Transaction Details</button
+      ><br /><br />
+      <button class="button-58" data-nav="address">Address Details</button>
+      
+    </div>
+
+    <div id="block" class="page block">
+      <div id="part">
+        <h2>Block Details</h2>
+        <img id="backToHomeBlock" src="assests/home.png" alt="" />
+      </div>
+      <input type="text" id="blockHash" placeholder="Enter block hash" />
+      <button id="fetchBlockButton">Fetch Block</button>
+      <div id="loaderBlock" class="loader"></div>
+
+      <div class="result1" id="result1"></div>
+    </div>
+
+    <div id="transaction" class="page block">
+      <div id="part">
+        <h2>Transaction Details</h2>
+        <img id="backToHomeTransaction" src="assests/home.png" alt="" />
+      </div>
+      <input type="text" id="txid" placeholder="Enter transaction ID" />
+      <button id="fetchTransactionButton">Fetch Transaction</button>
+      <div id="loaderTransaction" class="loader"></div>
+      <div id="transactionResult" class="result1"></div>
+    </div>
+
+    <div id="address" class="page block">
+      <div id="part">
+        <h2>Address Details</h2>
+        <img id="backToHomeAddress" src="assests/home.png" alt="" />
+      </div>
+      <input type="text" id="addressInput" placeholder="Enter address" />
+      <button id="fetchAddressButton">Fetch Address</button>
+      <div id="loaderAddress" class="loader"></div>
+      <div id="addressResult" class="result1"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
