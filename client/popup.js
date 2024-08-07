@@ -1,3 +1,4 @@
+const URL = "https://txtrack-server.vercel.app/"
 function navigateTo(page) {
   document.querySelectorAll(".page").forEach((div) => {
     div.classList.remove("active");
@@ -52,7 +53,7 @@ async function fetchBlock() {
   const loader = document.getElementById("loaderBlock");
   loader.style.display = "block";
   try {
-    const response = await fetch(`http://localhost:3000/block/${blockHash}`);
+    const response = await fetch(`${URL}/block/${blockHash}`);
     loader.style.display = "none";
     if (!response.ok) throw new Error("Network response was not ok");
     const data = await response.json();
@@ -90,7 +91,7 @@ async function fetchTransaction() {
   resultDiv.innerHTML = "";
   loader.style.display = "block";
   try {
-    const response = await fetch(`http://localhost:3000/transaction/${txid}`);
+    const response = await fetch(`${URL}/transaction/${txid}`);
     loader.style.display = "none";
     if (!response.ok) throw new Error("Network response was not ok");
     const data = await response.json();
@@ -122,7 +123,7 @@ async function fetchAddress() {
   resultDiv.innerHTML = "";
   loader.style.display = "block";
   try {
-    const response = await fetch(`http://localhost:3000/address/${address}`);
+    const response = await fetch(`${URL}/address/${address}`);
     loader.style.display = "none";
     if (!response.ok) throw new Error("Network response was not ok");
     const data = await response.json();
