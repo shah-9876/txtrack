@@ -1,10 +1,11 @@
-const URL = "https://txtrack-server.vercel.app/"
 function navigateTo(page) {
   document.querySelectorAll(".page").forEach((div) => {
     div.classList.remove("active");
   });
   document.getElementById(page).classList.add("active");
 }
+
+const URL = "https://txtrack-server.vercel.app/"
 
 function convertUnixToGMT7(unixTimestamp) {
   // Create a new Date object using the Unix timestamp (in milliseconds)
